@@ -1,0 +1,45 @@
+/* Media queries para responsividad */
+@media (max-width: 1200px) {
+    .bg-image { height: 350px; }
+}
+
+@media (max-width: 992px) {
+    .bg-image { height: 300px; }
+    .navbar-nav .nav-link { font-size: 1.1rem; }
+    .ubicacion { padding: 30px; }
+    .big-title { font-size: 1.85rem; }
+    .big-text { font-size: 1.25rem; }
+}
+
+@media (max-width: 768px) {
+    .bg-image { height: 250px; }
+    .navbar-nav .nav-link { font-size: 1rem; }
+    .ubicacion, #food img.img-fluid { padding: 20px; width: 80%; margin: 0 auto; }
+    .big-title { font-size: 1.75rem; }
+    .big-text { font-size: 1.2rem; }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-image { height: 200px; }
+    .navbar-nav .nav-link { font-size: 0.9rem; }
+    .ubicacion, #food img.img-fluid { padding: 15px; width: 100%; }
+    .big-title { font-size: 1.5rem; }
+    .big-text { font-size: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+    .bg-image { height: 150px; }
+    .navbar-nav .nav-link { font-size: 0.8rem; }
+    .ubicacion { padding: 10px; }
+    .big-title { font-size: 1.3rem; }
+    .big-text { font-size: 1rem; }
+}

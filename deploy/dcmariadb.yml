@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    container_name: PorfolioDB
+    image: mariadb
+    environment:
+      MARIADB_USER: porfolio
+      MARIADB_PASSWORD: porfoliopwd
+      MARIADB_DATABASE: PorfolioDB
+      MARIADB_ROOT_PASSWORD: 1234
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+
+      

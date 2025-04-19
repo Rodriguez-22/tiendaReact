@@ -1,0 +1,30 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cartas */
+}
+
+.card {
+    flex: 1 1 18rem; /* Permite que las cartas se ajusten al tamaño del contenedor */
+    max-width: 18rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 80px;
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+    font-size: large;
+    font-weight: bold;
+}
+
+.card-text {
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+}
+
+.carousel-margin-top {
+    margin-top: 100px; /* Ajusta el valor como prefieras */
+}

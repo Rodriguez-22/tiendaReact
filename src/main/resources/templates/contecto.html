@@ -1,0 +1,76 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{/www/layout/base}">
+
+<title>Contacto</title>
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/responsive.css}">
+</head>
+
+<body>
+    <section layout:fragment="MainBase" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">Contáctame</h2>
+            <p class="text-center text-muted">Completa el formulario y me pondré en contacto contigo lo antes posible.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg p-4">
+                        <div class="card-body1">
+                            <form action="/contecto" method="post">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+
+                            <!-- Mensaje de éxito -->
+                            <div th:if="${param.success}">
+                                <div class="alert alert-success">Mensaje enviado correctamente.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-3">
+                        <i class="bi bi-envelope-fill display-6 text-primary"></i>
+                        <h5 class="mt-2">Correo</h5>
+                        <p class="text-muted">Tienda.jj@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-3">
+                        <i class="bi bi-telephone-fill display-6 text-primary"></i>
+                        <h5 class="mt-2">Teléfono</h5>
+                        <p class="text-muted">+34 643 93 17 34</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card shadow-sm p-3">
+                        <i class="bi bi-geo-alt-fill display-6 text-primary"></i>
+                        <h5 class="mt-2">Ubicación</h5>
+                        <p class="text-muted">Huercal-Overa, España</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>

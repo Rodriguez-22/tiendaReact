@@ -1,0 +1,28 @@
+.hero-section img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#navbar {
+  transition: top 0.4s ease-in-out;
+}
+
+/* Efectos para hacer el footer o efecto devanecido */
+footer {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+footer.show-footer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto de desplazamiento */
+
+.card-body:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}

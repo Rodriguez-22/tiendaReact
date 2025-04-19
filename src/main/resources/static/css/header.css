@@ -1,0 +1,12 @@
+.navbar {
+    position: fixed;
+    top: 25px; /* Ajusta el top para que esté pegado */
+    width: 100%;
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    border-top: none; /* Asegúrate de que no hay borde */
+}
+
+body {
+    padding-top: 100px; /* Ajusta según la altura del encabezado */
+}

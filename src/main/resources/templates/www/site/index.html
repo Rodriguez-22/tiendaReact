@@ -1,0 +1,167 @@
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{/www/layout/base}">
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <!-- Add Bootstrap CSS for better styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div layout:fragment="MainBase">
+        <!-- Carousel Section -->
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-margin-top" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/carrusel/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/carrusel/2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Featured Products Section -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Productos Destacados</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper1.jpg" class="card-img-top" alt="Vaper 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper Recargable</h5>
+                            <p class="card-text">El mejor vaper para tus momentos de relajación. ¡Increíble sabor y
+                                durabilidad!</p>
+                            <p class="price">$24.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper2.jpg" class="card-img-top" alt="Vaper 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper de Mango</h5>
+                            <p class="card-text">Un sabor exótico y fresco de mango, ideal para cualquier ocasión.</p>
+                            <p class="price">$19.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper3.jpg" class="card-img-top" alt="Vaper 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper de Menta</h5>
+                            <p class="card-text">Sabor refrescante y suave, ideal para los amantes de lo fresco.</p>
+                            <p class="price">$17.99</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Envíos Gratis</h5>
+                            <p class="card-text">Consigue envíos gratis en menos de 48 horas en todos los pedidos.</p>
+                            <a href="#" class="btn btn-outline-primary">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrega en 24H</h5>
+                            <p class="card-text">Recibe tu pedido al día siguiente si lo realizas antes de las 20:00.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrega en Sábado</h5>
+                            <p class="card-text">Haz tu pedido antes de las 20:00 del viernes y recíbelo el sábado.</p>
+                            <a href="#" class="btn btn-outline-primary">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers Section -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Ofertas Especiales</h2>
+            <div class="row">
+                <!-- Special Offer 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper4.jpg" class="card-img-top" alt="Oferta 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper Menta X</h5>
+                            <p class="card-text">¡Aprovecha esta oferta! Consigue el sabor a menta por solo $15.99.</p>
+                            <p class="price text-danger"><s>$19.99</s> $15.99</p>
+                            <a href="#" class="btn btn-success">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Special Offer 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper5.jpg" class="card-img-top" alt="Oferta 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper de Sandia y Platano</h5>
+                            <p class="card-text">Disfruta de este delicioso sabor a Sandia y Platano con un 25% de
+                                descuento.</p>
+                            <p class="price text-danger"><s>$21.99</s> $16.49</p>
+                            <a href="#" class="btn btn-success">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Special Offer 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../imagenes/site/vaper6.jpg" class="card-img-top" alt="Oferta 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Vaper de Uva</h5>
+                            <p class="card-text">Consigue este delicioso sabor a uva con un 20% de descuento. ¡No te lo
+                                pierdas!</p>
+                            <p class="price text-danger"><s>$22.99</s> $18.39</p>
+                            <a href="#" class="btn btn-success">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js for functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

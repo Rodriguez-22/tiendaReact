@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Inicio - ' + ${titulo}">Página de Inicio</title>
+    <!-- Vincular con Bootstrap 5.3.3 -->
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <!-- Vinculo con los iconos de botsrap 5.3.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <!-- Replace del header -->
+    <header th:replace="~{www/layout/componets/header :: header}"></header>
+
+    
+    <main class="container mt-4">
+        <div layout:fragment="MainBase">
+            <!-- Aquí se insertará el contenido específico de cada página -->
+        </div>
+    </main>
+
+    <!-- Replace del Footer -->
+    <footer th:replace="~{www/layout/componets/footer :: footer}"></footer>
+
+    <!-- Scripts -->
+    <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/navbar.js"></script>
+
+</body>
+</html>

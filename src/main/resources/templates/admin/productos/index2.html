@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <script defer th:src="@{/js/sidebar.js}"></script> <!-- Si usas JS para el menú lateral -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header th:replace="~{admin/layout/header :: header}"></header>
+
+    <div class="d-flex">
+        <!-- SIDEBAR -->
+        <nav th:replace="~{admin/layout/sidebar :: sidebar}"></nav>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="container mt-4">
+            <h1 class="text-center">Panel de Administración</h1>
+
+            <div class="row mt-4">
+                <!-- Gestión de Productos -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>Gestión de Productos</h4>
+                            <p>Administra los productos de la tienda.</p>
+                            <a th:href="@{/admin/productos}" class="btn btn-primary">Ir a Productos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestión de Categorías -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>Gestión de Categorías</h4>
+                            <p>Administra las categorías de productos.</p>
+                            <a th:href="@{/admin/categorias}" class="btn btn-primary">Ir a Categorías</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin de Contenido Principal -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer th:replace="~{admin/layout/footer :: footer}"></footer>
+</body>
+</html>
