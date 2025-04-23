@@ -1,3 +1,4 @@
+import { Key } from "react";
 
 export interface Sabor {
     id: number; 
@@ -9,6 +10,7 @@ export interface Sabor {
 
 
 export interface Producto {
+    producto_id: Key | null | undefined;
     id: number; 
     nombreProducto: string;
     descripcion?: string; 

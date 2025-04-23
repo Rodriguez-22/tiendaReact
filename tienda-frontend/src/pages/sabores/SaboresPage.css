@@ -1,0 +1,213 @@
+/* Configuración global de fuentes */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Estilo para el encabezado */
+  h2 {
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para las tarjetas */
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-img-top {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  button {
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para botones */
+  button:focus, button:active {
+    box-shadow: none;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Estilo para la barra de búsqueda y orden */
+  .form-control, .form-select {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Estilos para el botón de vista de tarjetas y lista */
+  button.btn-outline-primary {
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Estilos para la tabla */
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+  
+  .table th, .table td {
+    vertical-align: middle;
+    font-size: 0.9rem;
+  }
+  
+  .table th {
+    background-color: #f1f3f5;
+    color: #495057;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Estilo para el modal */
+  .modal-content {
+    border-radius: 15px;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-footer button {
+    padding: 8px 16px;
+    border-radius: 10px;
+  }
+  
+  /* Imagen del modal */
+  .img-fluid {
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  /* Estilo de alertas */
+  .alert {
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 15px;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  .alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+  }
+  
+  .alert-heading {
+    font-weight: bold;
+  }
+  
+  /* Estilo para el contenedor principal */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Estilo para el filtro de búsqueda */
+  input[type="text"] {
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: 1px solid #ced4da;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .select {
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Estilos para el contenedor de carga */
+  .text-center {
+    text-align: center;
+  }
+  
+  .spinner-border {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la fila de acción (Buscar y ordenar) */
+  .mb-3 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el título del modal */
+  .modal-title {
+    font-weight: 600;
+    color: #007bff;
+  }
+  
