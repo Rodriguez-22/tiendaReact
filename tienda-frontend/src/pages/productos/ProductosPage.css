@@ -1,0 +1,37 @@
+/* Asegura que la imagen dentro del modal se ajuste adecuadamente */
+.modal-product-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limita la altura máxima de la imagen */
+    object-fit: contain; /* Mantiene la relación de aspecto */
+    margin-bottom: 20px;
+  }
+  
+  /* Ajuste para la imagen de producto en la vista de tarjetas */
+  .product-image {
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  /* Estilos opcionales adicionales para el modal */
+  .modal-dialog {
+    max-width: 800px;
+  }
+  
+  .modal-content {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
