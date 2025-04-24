@@ -9,8 +9,8 @@ import Footer from './components/layout/footer';
 import ProductosPage from './pages/productos/ProductosPage';
 import SaboresPage from './pages/sabores/SaboresPage';
 import Inicio from './pages/site/Home';
+import Contacto from './pages/contacto/Contacto';
 
-const ContactoPage: React.FC = () => { return <h2>Página de Contacto</h2>; }
 const LoginPage: React.FC = () => { return <h2>Página de Login</h2>; }
 const AdminPage: React.FC = () => { return <h2>Panel de Administración</h2>; }
 const NotFoundPage: React.FC = () => { return <h2>404 - Página No Encontrada</h2>}
@@ -23,10 +23,9 @@ function App() {
         <Container as="main" className="py-4 flex-grow-1">
           <Routes>
             <Route path="/" element={<Inicio />} />
-            {}
             <Route path="/productos" element={<ProductosPage />} />
             <Route path="/sabores" element={<SaboresPage />} />
-            <Route path="/contacto" element={<ContactoPage />} />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/admin" element={<AdminPage />} />
             <Route path="*" element={<NotFoundPage />} />

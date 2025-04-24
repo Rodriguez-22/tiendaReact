@@ -183,7 +183,11 @@ const ProductosPage: React.FC = () => {
                     : 'Precio no disponible'}
                 </p>
               </div>
-              <Button variant="primary" size="sm" className="buy-btn">Comprar</Button>
+              <div className="d-flex flex-column align-items-end gap-2">
+                <Button variant="outline-primary" size="sm" onClick={() => handleVerMas(producto)}>
+                  Ver más
+                </Button>
+              </div>
             </ListGroup.Item>
           ))}
         </ListGroup>
@@ -213,7 +217,6 @@ const ProductosPage: React.FC = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleCloseModal}>Cerrar</Button>
-            <Button variant="primary">Comprar ahora</Button>
           </Modal.Footer>
         </Modal>
       )}

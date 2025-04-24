@@ -1,37 +1,156 @@
-/* Asegura que la imagen dentro del modal se ajuste adecuadamente */
+/* ====== Global ====== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* ====== Buscador y Orden ====== */
+.search-input,
+.order-select {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+.search-input:focus,
+.order-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* ====== Botones de Vista ====== */
+.view-button {
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ====== Tarjetas ====== */
+.product-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  border-radius: 10px 10px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.view-more-btn {
+  margin-top: auto;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ====== Lista de productos ====== */
+.product-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product-list-item:hover {
+  background-color: #f1f3f5;
+}
+
+.product-list-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ====== Modal ====== */
 .modal-product-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px; /* Limita la altura máxima de la imagen */
-    object-fit: contain; /* Mantiene la relación de aspecto */
-    margin-bottom: 20px;
-  }
-  
-  /* Ajuste para la imagen de producto en la vista de tarjetas */
-  .product-image {
-    object-fit: cover;
-    height: 250px;
-  }
-  
-  /* Estilos opcionales adicionales para el modal */
-  .modal-dialog {
-    max-width: 800px;
-  }
-  
-  .modal-content {
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  .modal-header {
-    border-bottom: none;
-  }
-  
-  .modal-footer {
-    border-top: none;
-  }
-  
-  .modal-title {
-    font-weight: bold;
-  }
-  
+  border-radius: 10px;
+  max-height: 300px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer button {
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+/* ====== Carga ====== */
+.spinner {
+  margin-top: 20px;
+}
+
+.loading-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* ====== Alertas ====== */
+.alert {
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+}
+
+.alert-heading {
+  font-weight: bold;
+}

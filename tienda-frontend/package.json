@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-slot": "^1.2.0",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.9.1",
     "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
