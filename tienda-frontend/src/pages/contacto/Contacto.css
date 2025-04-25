@@ -1,0 +1,39 @@
+.contact-page {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .contact-page h2 {
+    color: #333;
+  }
+  
+  .contact-page .card {
+    border-radius: 12px;
+  }
+  
+  .contact-page .card-body {
+    padding: 2rem;
+  }
+  
+  .contact-page .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .contact-page .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .contact-page .card-body i {
+    color: #007bff;
+  }
+  
+  .contact-page .card-body p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
