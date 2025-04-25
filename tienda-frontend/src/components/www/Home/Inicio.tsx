@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap para los estilos
 import './HomePage.css'; // Archivo CSS adicional para personalización
-import Carrusel from './Carrusel';
 
 const HomePage = () => {
   // Estado para controlar la visibilidad del modal
@@ -21,7 +20,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <Carrusel /> {/* Carrusel de imágenes */}
+
       
       {/* Sección de productos destacados */}
       <div className="container mt-5">

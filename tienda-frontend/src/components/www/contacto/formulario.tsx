@@ -15,7 +15,7 @@ const ContactForm = () => {
         "service_90s7f29",      // <- Reemplazá con tu Service ID
         "template_0w728vj",     // <- Reemplazá con tu Template ID
         form.current,
-        "t9vTtJjBUaSFDHD-i"       // <- Reemplazá con tu Public Key
+        "G9aCG1ZBfIH_B9a5b"       // <- Reemplazá con tu Public Key
       )
       .then(
         () => {
